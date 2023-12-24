@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+    <title>لاگین</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,7 +68,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>لاگین کن</h1>
+        <h1>Login</h1>
         <form id="login-form">
             <input type="text" placeholder="Username" required>
             <input type="password" placeholder="Password" required>
@@ -84,7 +84,15 @@
             // Simulate successful login
             var username = form.elements[0].value;
             var password = form.elements[1].value;
-            if (username === "admin" && password === "admin")
+            if (username === "ali" && password === "ghadi") {
+                window.location.href = "welcome.html";  // redirect to welcome page
+            } else {
+                form.classList.add("animate");  // add shake animation to the form
+                setTimeout(function(){
+                    form.classList.remove("animate");
+                }, 500);
+            var username = form.elements[0].value;
+            var password = form.elements[1].value;
             if (username === "ali" && password === "makhdoumi") {
                 window.location.href = "welcome.html";  // redirect to welcome page
             } else {
@@ -94,7 +102,6 @@
                 }, 500);
             }
         });
-        
     </script>
 </body>
 </html>
