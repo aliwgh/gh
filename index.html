@@ -1,68 +1,98 @@
-html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Telegram Premium Shop</title>
+    <title>Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         
         h1 {
             text-align: center;
+            color: #333;
         }
         
-        #container {
-            width: 800px;
-            margin: 0 auto;
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
         }
         
-        .product {
-            margin-bottom: 50px;
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #0088cc;
         }
         
-        .product img {
-            max-width: 100%;
-        }
-        
-        .product h2 {
-            margin: 10px 0;
-        }
-        
-        .product p {
-            margin-bottom: 20px;
-        }
-        
-        .product button {
-            padding: 10px 20px;
-            background: #58a9e7;
-            color: white;
+        .button {
+            background-color: #0088cc;
+            color: #fff;
+            padding: 14px 20px;
+            margin: 8px 0;
             border: none;
             cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
         }
         
-        .product button:hover {
-            background: #1678c2;
+        .button:hover {
+            background-color: #005580;
         }
+        
+        .animate {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0% {transform: translateX(0);}
+            20%, 80% {transform: translateX(-10px);}
+            40%, 60% {transform: translateX(10px);}
+            100% {transform: translateX(0);}
+        }        
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Welcome to the Telegram Premium Shop</h1>
-        
-        <div class="product">
-            <img src="telegram_premium.png" alt="Telegram Premium">
-            <h2>Telegram Premium Subscription</h2>
-            <p>Get access to exclusive features and enhanced security with our Telegram Premium subscription.</p>
-            <p>Price: $9.99/month</p>
-            <button>Add to Cart</button>
-        </div>
-        
-        <!-- Add more products here if needed -->
-        
-        <div id="cart">
-            <!-- Shopping cart functionality to be implemented with JavaScript -->
-        </div>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" class="button" value="Login">
+        </form>
     </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var form = document.getElementById('login-form');
+            
+            // Simulate successful login
+            var username = form.elements[0].value;
+            var password = form.elements[1].value;
+            if (username === "admin" && password === "admin") {
+                window.location.href = "welcome.html";  // redirect to welcome page
+            } else {
+                form.classList.add("animate");  // add shake animation to the form
+                setTimeout(function(){
+                    form.classList.remove("animate");
+                }, 500);
+            }
+        });
+    </script>
 </body>
 </html>
