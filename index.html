@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>لاگین</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #0088cc;
+        }
+        
+        .button {
+            background-color: #0088cc;
+            color: #fff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #005580;
+        }
+        
+        .animate {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0% {transform: translateX(0);}
+            20%, 80% {transform: translateX(-10px);}
+            40%, 60% {transform: translateX(10px);}
+            100% {transform: translateX(0);}
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" class="button" value="Login">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var form = document.getElementById('login-form');
+            
+            // Simulate successful login
+            var username = form.elements[0].value;
+            var password = form.elements[1].value;
+            if (username === "ali" && password === "ghadi") {
+                window.location.href = "welcome.html";  // redirect to welcome page
+            } else {
+                form.classList.add("animate");  // add shake animation to the form
+                setTimeout(function(){
+                    form.classList.remove("animate");
+                }, 500);
+            var username = form.elements[0].value;
+            var password = form.elements[1].value;
+            if (username === "ali" && password === "makhdoumi") {
+                window.location.href = "welcome.html";  // redirect to welcome page
+            } else {
+                form.classList.add("animate");  // add shake animation to the form
+                setTimeout(function(){
+                    form.classList.remove("animate");
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>
