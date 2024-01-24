@@ -1,6 +1,0 @@
-vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@104.21.28.62:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=3k.pureboy.eu.org&type=ws&sni=3k.pureboy.eu.org#Spotigram
-vless://356c890f-31a8-47d8-984f-f79727412994@104.24.176.7:80?path=%2FTalaNetwork&security=none&encryption=none&host=it.sponsored-by.talanetwork.me&type=ws#Spotigram
-vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@172.67.170.103:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=3k.pureboy.eu.org&type=ws&sni=3k.pureboy.eu.org#Spotigram
-vless://b9ad895b-12ac-40fc-a5ac-a5b2a1285001@104.21.28.62:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=3k.pureboy.eu.org&type=ws&sni=3k.pureboy.eu.org#Spotigram
-vless://376b9861-2fc6-4647-959c-18185cd9c95a@104.31.16.36:443?path=%2Ffflsws&security=tls&encryption=none&host=lmn39.sbs&type=ws&sni=lmn39.sbs#Spotigram
-vless://356c890f-31a8-47d8-984f-f79727412994@104.24.176.7:80?path=%2FTalaNetwork&security=none&encryption=none&host=it.sponsored-by.talanetwork.me&type=ws#Spotigram
