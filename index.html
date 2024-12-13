@@ -1,75 +1,54 @@
-html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Form</title>
-    <style>
-        body {
-            background-image: url('https://s30.picofile.com/file/8470830518/image.jpg');
-            background-size: cover;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        #loginForm input[type="text"], #loginForm input[type="password"] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 5px;
-        }
-        #loginForm input[type="submit"] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #loginForm input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>صفحه ارور 404 - صفحه یافت نشد :: دریافت شده از وب روبیک</title>
+	<!-- start css and style -->
+	<link rel="stylesheet" href="css/bootstrap-rtl.css">
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
 </head>
-
 <body>
-    <div class="container">
-        <form id="loginForm" method="post" action="welcome.html" onsubmit="return validateForm()">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-xs-12">
+			<div class="wrapper">
+				<!-- start text box -->
+				<div class="TextHolder">
+					<div class="Texts">
+						<div class="FourOhFour">404</div>
+						<div class="Maybe">اوه ... شاید ...<span>مشکلی پیش اومده باشه</span></div>
+						<div class="Bad">متاسفانه صفحه مورد نظر پیدا نشد !</div>
+						<a href=""><div class="Return">بازگشت به صفحه نخست</div></a>
+					</div>
+				</div>
+				<!-- end text box -->
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <input type="submit" value="Login">
-        </form>
-    </div>
-    
-    <script>
-        function validateForm() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
+				<!-- start monster details -->
+				<div class="Body">
+					<div class="LeftEye"></div>
+					<div class="RightEye"></div>
+					<div class="EyeShadows"></div>
+					<div class="Mouth"></div>
+					<div class="MouthShadows"></div>
+					<div class="Theet"></div>
+					<div class="BodyTexture"></div>
+				</div>
+				<div class="Horns">
+					<div class="HornsExtras"></div>
+				</div>
+				<div class="LeftHand"></div>
+				<div class="RightHand"></div>
+				<!-- end monster details -->
+			</div>
+		</div>
+	</div>
+</div>
 
-            // Add your credential validation logic here
-            if (username === "ali" && password === "ghadi") {
-                alert("Logged in successfully!");
-                return true;
-            } else {
-                alert("Invalid username or password!");
-                return false;
-            }
-        }
-    </script>
-</body>
+	<!-- start java script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script  src="js/scripts.js"></script>
+</body><!-- This template has been downloaded from Webrubik.com -->
 </html>
