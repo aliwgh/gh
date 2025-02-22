@@ -1,62 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 
-header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 2s forwards 2s;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.bot-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+nav ul li a:hover {
+    color: orange;
 }
 
-.bot-item {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
+section {
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-button {
-    background: #ff9800;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #e68900;
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer {
-    margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.8);
 }
