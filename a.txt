@@ -26,3 +26,5 @@ vless://63743432-0783-4a05-811d-8f8307fc9ba5@188.114.96.3:2053?path=%2FYeGPDE3B8
 vless://561623c8-4983-44d3-a6ef-92b803a74ee8@obedient-menu.seotoolsforyou.co.uk:80?path=%2F&security=&encryption=none&type=ws#%40freenetconf
 vless://1dd49fb8-6570-4a2a-a236-f410b63159cf@OBEDiENT-detAiL.SEOTOOlSFOrYou.co.uk:80?path=%2F&security=&encryption=none&type=ws#%40freenetconf
 vless://f5f2458c-5fcb-4820-82c2-2997492c54d5@62.60.192.209:80?path=%2F&security=&encryption=none&type=ws#%40freenetconf
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@45.139.24.24:57456#%40freenetconf%20-%20Youtube%E2%9D%8C
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@ru.vmagnum.win:57456#%40freenetconf%20-%20Youtube%E2%9D%8C%202
