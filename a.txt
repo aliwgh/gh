@@ -17,3 +17,4 @@ vless://e9979910-79d1-4621-a93c-b2a579c44ba7@104.16.69.162:8880?path=%2F---%40Ex
 vless://e9979910-79d1-4621-a93c-b2a579c44ba7@104.16.69.162:8880?path=%2FfgvtHUpS6R8Rv8s5%3Fed&security=none&encryption=none&host=vngsupply.ip-ddns.com&type=ws#%40freenetconf%20%F0%9F%8C%90
 vmess://eyJhZGQiOiIyMTMuMTQyLjE1MC4yMjciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiM2MzZTBjZGEtNzA5YS00MzhjLWE0OGEtOTliMzhmOGRkYzY4IiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI4NDQzIiwicHMiOiJAZnJlZW5ldGNvbmYgLSDwn46uIPCfh7nwn4e3Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiItLS0iLCJ2IjoiMiJ9
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDcXpGNXVmSnVMNUVUaXY5ZUlTZW9N@h110vpntr.outlinekeys.net:65262#%40freenetconf%20-%20%F0%9F%8E%AE%20%F0%9F%87%B9%F0%9F%87%B7
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3OGUzNjMxMi0xNmQ0LTQ5YzItYWQxOC02MTBiZjZkMDVkNjM%3D@ru.fastsoonlink.com:40031#%40freenetconf%20-%20Youtube%20%F0%9F%87%B7%F0%9F%87%BA
